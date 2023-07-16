@@ -1,14 +1,14 @@
 
 # PySogs on Docker
 
-## 1. Configure DHCP Router to have static address
-
-Router Port Forarding : 
+## 1. Prerequires
+### Configure DHCP Router to have static address
+### Configure Router Port Forarding : 
   External : 8000 > Internal : 8000
 
 
-Replace SESSIONID in run.sh
-Replace <public_ip> in sogs.ini
+### Replace SESSIONID in run.sh
+### Replace <public_ip> in sogs.ini
 
 docker compose up
 docker attach pysogs

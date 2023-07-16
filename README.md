@@ -1,5 +1,7 @@
 # PySogs on Docker
 Try to make a usable-ready container.. Need help.
+
+If i connect on public_ip from other device, I have an "Internal Server Error" o my broser
 I think problem from port management
 
 ## About 

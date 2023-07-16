@@ -1,8 +1,10 @@
-# About 
+# PySogs on Docker
+
+## About 
 
 Ducumentation : https://docs.oxen.io/oxen-docs/products-built-on-oxen/session/guides/open-group-setup
 
-# PySogs on Docker
+
 
 ## Prerequires
 - Make sure you have docker and docker compose installed on your machine.

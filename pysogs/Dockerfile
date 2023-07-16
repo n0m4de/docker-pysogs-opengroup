@@ -5,9 +5,8 @@ ENV SOGS_CONFIG=/sogs.ini
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY sogs.ini sogs.ini
 COPY run.sh run.sh
-COPY run-proxied.sh run-proxied.sh
 
-RUN chmod +x run.sh run-proxied.sh
+RUN chmod +x run.sh
 RUN apt update
 RUN apt -y install curl lsb-release systemctl apt-utils nano tzdata dialog sqlite3
 RUN apt-get -y install ucf libterm-readline-gnu-perl

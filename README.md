@@ -24,5 +24,9 @@ docker attach pysogs
 ./run.sh
 ```
 
+3. The prompt ask you for your public url
+```
 <public_ip>:8000
+```
+
 

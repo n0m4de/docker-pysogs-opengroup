@@ -1,7 +1,7 @@
 # PySogs on Docker
 Try to make a usable-ready container.. Need help.
 
-If i connect on http://<public_ip>:8000 from other device, I have an "Internal Server Error" on my broser
+If i connect on http://<public_ip>:8000 from other device, I have an "Internal Server Error" on my broser.
 I think problem from port management
 
 ## About 

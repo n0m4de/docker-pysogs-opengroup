@@ -6,7 +6,7 @@
 - Make sure you have git installed on your machine.
 - Configure DHCP Router to have static address
 - Configure Router Port Forarding :
-  - External : 8000 > Internal : 8000
+  > External : 8000 > Internal : 8000
 
 ## Install
 

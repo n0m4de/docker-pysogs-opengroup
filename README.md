@@ -28,5 +28,5 @@ docker attach pysogs
 ```
 <public_ip>:8000
 ```
-
+> Replace <public_ip> by yours
 

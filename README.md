@@ -2,6 +2,9 @@
 # PySogs on Docker
 
 ## Install
+1. Make sure you have docker and docker compose installed on your machine.
+2. Make sure you have git installet on your machine.
+git clone
 
 ## Prerequires
 1. Configure DHCP Router to have static address

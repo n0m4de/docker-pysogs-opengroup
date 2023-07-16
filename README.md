@@ -15,8 +15,8 @@ git clone https://github.com/n0m4de/docker-pysogs-opengroup
 cd docker-pysogs-opengroup
 ```
 
-Replace SESSIONID in run.sh
-Replace <public_ip> in sogs.ini
+1. Replace SESSIONID in run.sh
+2. Replace <public_ip> in sogs.ini
 
 ```
 docker compose up

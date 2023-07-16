@@ -1,4 +1,6 @@
 # PySogs on Docker
+Try to make a usable-ready container.. Need help.
+I think problem from port management
 
 ## About 
 

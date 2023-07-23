@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 ENV TZ=Asia/Dubai
 ENV SOGS_CONFIG=/sogs.ini
@@ -20,6 +20,8 @@ RUN echo "deb https://deb.oxen.io $(lsb_release -sc) main" | tee /etc/apt/source
 # Update package lists:
 
 RUN apt -y update
+
+RUN apt -y install sogs-standalone
 
 ENTRYPOINT bash
 

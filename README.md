@@ -1,15 +1,13 @@
 # PySogs on Docker
 Try to make a usable-ready container.. Need help.
 
-If i connect on http://<public_ip>:8000 from other device, I have an "Internal Server Error" on my broser.
-I think problem from port management
+If i connect on http://<public_ip>:8000 from device outside/inside LAN, I have an "Internal Server Error" on my broser.
+The problem from uwsgi management (see: /etc/sogs/sogs-standalone.ini from container)
 
 ## About 
 
 - Ducumentation : https://docs.oxen.io/oxen-docs/products-built-on-oxen/session/guides/open-group-setup
 - GitHub Page : https://github.com/oxen-io/session-pysogs/blob/dev/setup.cfg
-
-
 
 ## Prerequires
 - Make sure you have docker and docker compose installed on your machine.

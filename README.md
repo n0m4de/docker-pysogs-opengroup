@@ -30,7 +30,7 @@ Inside containers :
 
 The prompt ask you for your public url
 ```
-<public_ip>:8000
+http://<public_ip>:8000
 ```
 > Replace <public_ip> by yours
 

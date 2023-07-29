@@ -1,11 +1,12 @@
 services:
+  
   sogs:
+    container_name: pysogs
     build:
       ./pysogs
 
     tty: True
     stdin_open: True
-
     ports:
       - 8000:8000
 

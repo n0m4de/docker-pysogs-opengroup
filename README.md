@@ -2,7 +2,7 @@
 Try to make a usable-ready container.. Need help.
 
 If i connect on http://<public_ip>:8000 from device outside/inside LAN, I have an "Internal Server Error" on my broser.
-The problem from uwsgi management (see: /etc/sogs/sogs-standalone.ini from container)
+The problem from uwsgi management (see: /etc/sogs/sogs-standalone.ini from container) #TODO maybe need user management
 
 ## About 
 

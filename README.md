@@ -21,18 +21,14 @@ The problem from uwsgi management (see: /etc/sogs/sogs-standalone.ini from conta
 ```
 git clone https://github.com/n0m4de/docker-pysogs-opengroup
 cd docker-pysogs-opengroup
-```
-
-- Replace SESSIONID in /pysogs/run.sh
-- Replace <public_ip> in /pysogs/sogs.ini
-
-```
 docker compose up
-docker attach pysogs
+```
+Inside containers :
+```
 ./run.sh
 ```
 
-3. The prompt ask you for your public url
+The prompt ask you for your public url
 ```
 <public_ip>:8000
 ```

@@ -18,14 +18,14 @@ The problem from uwsgi management (see: /etc/sogs/uwsgi-standalone.ini from cont
 
 ## Install
 
-
+- Get the project
 ```
 git clone https://github.com/n0m4de/docker-pysogs-opengroup
 cd docker-pysogs-opengroup
 ```
 
-Replace <public_ip> in pysogs/sogs.ini by yours.
-In folder docker-pysogs-opengroup:
+- Replace <public_ip> in pysogs/sogs.ini by yours.
+- In folder docker-pysogs-opengroup:
 
 
 ```

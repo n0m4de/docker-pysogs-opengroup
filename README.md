@@ -25,7 +25,7 @@ cd docker-pysogs-opengroup
 ```
 
 - Replace <public_ip> in pysogs/sogs.ini by yours.
-- In folder docker-pysogs-opengroup:
+- In folder /docker-pysogs-opengroup:
 
 
 ```

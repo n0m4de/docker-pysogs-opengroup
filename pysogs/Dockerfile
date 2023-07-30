@@ -8,8 +8,6 @@ RUN apt update && apt -y upgrade
 RUN apt -y install curl lsb-release apt-utils nano ucf python3-pip
 RUN apt-get -y install systemctl
 
-
-
 RUN apt update
 
 RUN curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
@@ -30,13 +28,9 @@ RUN chmod a+rw /var/lib/session-open-group-server/sogs.db
 COPY sogs.ini /etc/sogs/sogs.ini
 COPY uwsgi.ini .
 COPY auth.py .
-COPY blink_session_id.py .
 
 RUN sogs --add-room fishing --name "Fish Talk" --description "Three fish, four fish, yellow fish, green fish"
 RUN sogs --rooms + --add-moderators SESSIONID --admin --hidden
-
-
-
 
 ENTRYPOINT uwsgi --ini uwsgi.ini
 

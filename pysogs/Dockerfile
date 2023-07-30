@@ -13,8 +13,7 @@ RUN curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
 RUN echo "deb https://deb.oxen.io $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/oxen.list
 
 RUN apt -y update
-RUN apt -y install sogs-standalone
-CMD http://<public-ip>:8000
+RUN echo http://<public-ip>:8000 | apt -y install sogs-standalone
 
 RUN addgroup uwsgi
 RUN useradd -G uwsgi sogs

@@ -11,18 +11,15 @@ RUN apt update
 RUN curl -so /etc/apt/trusted.gpg.d/oxen.gpg https://deb.oxen.io/pub.gpg
 # Add the Oxen apt repository to your package configuration:
 RUN echo "deb https://deb.oxen.io $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/oxen.list
-# Update package lists:
+
 RUN apt -y update
+RUN apt -y install sogs-standalone
+CMD http://<public-ip>:8000
 
 RUN addgroup uwsgi
-RUN useradd -G uwsgi uwsgi
+RUN useradd -G uwsgi sogs
 
+USER sogs
 
-COPY --chown:uwsgi run.sh run.sh
-RUN chmod +x run.sh
-
-
-
-
-ENTRYPOINT bash
+ENTRYPOINT python3 -msogs --initialize
 

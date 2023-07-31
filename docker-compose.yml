@@ -1,15 +1,15 @@
 services:
-  
+
   sogs:
     container_name: pysogs
     build:
-      ./pysogs
+      context: ./pysogs
+      args:
+        - PUBLICIP
+        - SESSIONID
+
 
     tty: True
     stdin_open: True
     ports:
       - 8000:8000
-
-
-
-

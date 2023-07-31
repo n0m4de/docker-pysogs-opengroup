@@ -21,9 +21,7 @@ git clone https://github.com/n0m4de/docker-pysogs-opengroup
 cd docker-pysogs-opengroup
 ```
 
-- Replace <public_ip> in pysogs/sogs.ini by yours.
-- Replace SESSIONID in pysogs/Dockerfile by yours.
-- In folder /docker-pysogs-opengroup:
+- Replace <public_ip> and <session_id> in [.env]() by yours.
 
 
 ```

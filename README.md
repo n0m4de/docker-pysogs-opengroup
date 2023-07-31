@@ -21,7 +21,7 @@ git clone https://github.com/n0m4de/docker-pysogs-opengroup
 cd docker-pysogs-opengroup
 ```
 
-- Replace <public_ip> and <session_id> in [.env]() by yours.
+- Replace <public_ip> and <session_id> in [.env](https://github.com/n0m4de/docker-pysogs-opengroup/blob/main/.env) by yours.
 
 
 ```

@@ -1,5 +1,5 @@
 # PySogs on Docker
-Usable-ready container.
+Secure usable-ready container.
 
 ## Congrulation 
 

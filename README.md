@@ -1,7 +1,7 @@
 # PySogs on Docker
 Secure usable-ready container.
 
-## Congrulation 
+## About 
 
 - Ducumentation : https://docs.oxen.io/oxen-docs/products-built-on-oxen/session/guides/open-group-setup
 - GitHub Page : https://github.com/oxen-io/session-pysogs/

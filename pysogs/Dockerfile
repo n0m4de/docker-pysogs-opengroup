@@ -32,10 +32,12 @@ RUN crudini --set --existing /etc/sogs/sogs.ini net base_url $PUBLICIP
 RUN sogs --add-room fishing --name "Fish Talk" --description "Three fish, four fish, yellow fish, green fish"
 RUN sogs --rooms + --add-moderators $SESSIONID --admin --hidden
 
-# RUN python3 auth.py -s <session_id> -N -t 0 -b -k <public_server_key> -m GET -p /inbox -S http://0.0.0.0:8000
-# => Empty response
 
 ENTRYPOINT uwsgi --ini uwsgi.ini
+
+# run this in container:
+# python3 auth.py -s <session_id> -N -t 0 -b -k <public_server_key> -m GET -p /inbox -S http://0.0.0.0:8000
+# => Empty body response, code 200
 
 
 

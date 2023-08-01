@@ -25,8 +25,6 @@ RUN chmod a+rw /var/lib/session-open-group-server/sogs.db
 
 COPY sogs.ini /etc/sogs/sogs.ini
 COPY uwsgi.ini .
-COPY auth.py .
-COPY blink_session_id.py .
 
 RUN crudini --set --existing /etc/sogs/sogs.ini net base_url $PUBLICIP
 

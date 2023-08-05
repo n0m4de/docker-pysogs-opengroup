@@ -26,7 +26,7 @@ RUN chmod a+rw /var/lib/session-open-group-server/sogs.db
 COPY sogs.ini /etc/sogs/sogs.ini
 COPY uwsgi.ini .
 
-RUN crudini --set --existing /etc/sogs/sogs.ini net base_url $PUBLICIP
+RUN echo base_url="$PUBLICIP" | crudini --merge /etc/sogs/sogs.ini net
 
 RUN sogs --add-room fishing --name "Fish Talk" --description "Three fish, four fish, yellow fish, green fish"
 RUN sogs --rooms + --add-moderators $SESSIONID --admin --hidden
